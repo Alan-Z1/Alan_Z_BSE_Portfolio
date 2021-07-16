@@ -20,4 +20,5 @@ My final milestone is the increased reliability and accuracy of my robot. I amel
 
 My first milestone was setting up the ultrasonic distance sensor and wiring it up with the Arduino and breadboard. First, I had to find a way to upload code to the Arduino with my Chromebook, so I decided to use Arduino Cloud. I also had to figure out how to code the Arduino so that I could see the distance when it ran. Eventually, I was able to make the ultrasonic distance sensor work properly. The distance was printed out on my screen with each interval of time that passed.
 
-[![First Milestone](![image](https://user-images.githubusercontent.com/86977893/125977533-239bbd41-e2f5-4023-bc73-c725e6bf8818.png))](https://youtu.be/52GaqGRs94M)
+[![First Milestone](![image](https://user-images.githubusercontent.com/86977893/125977928-c601531f-fda3-4272-b800-1ca4271b0c72.png)
+)](https://youtu.be/52GaqGRs94M)
