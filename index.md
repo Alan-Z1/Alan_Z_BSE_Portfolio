@@ -16,7 +16,7 @@ A robot that can avoid obstacles in its way when moving
 # Second Milestone
 
 
-[![Second Milestone](
+[![Second Milestone]([![](https://res.cloudinary.com/marcomontalbano/image/upload/v1626886019/video_to_markdown/images/youtube--hsiMysgAM8c-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/hsiMysgAM8c "Alan Z Milestone 2")
 
 
 # First Milestone
