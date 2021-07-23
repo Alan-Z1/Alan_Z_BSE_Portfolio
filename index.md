@@ -5,7 +5,7 @@ A robot that can avoid obstacles in its way when moving by sensing them with an 
 |:--:|:--:|:--:|:--:|
 | Alan Z | Leigh | Engineering | Incoming Junior
 
-![Headstone Image](image url
+![Headstone Image](
   
 # Demo Night Video
 
