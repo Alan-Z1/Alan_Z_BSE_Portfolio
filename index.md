@@ -1,3 +1,4 @@
+![IMG_3902](https://user-images.githubusercontent.com/86977893/126823598-58aed7cc-712d-4961-b447-cb98a479bf6b.JPG)
 ﻿# Object Avoiding Robot
 A robot that can avoid obstacles in its way when moving by sensing them with an ultrasonic distance sensor.
 
@@ -16,7 +17,8 @@ A robot that can avoid obstacles in its way when moving by sensing them with an 
 
 My final milestone was basically finishing up the robot. I uploaded the complete code to the Arduino and tested the robot in its ability to actually avoid obstacles. I also plan to make some modifications in the future, starting with some simpler ones, such as having a red LED light up whenever an obstacle is detected by the robot.
 
-[![Final Milestone](
+[![Final Milestone](https://user-images.githubusercontent.com/86977893/126823679-69c6ac49-c720-4e57-b706-696d05eb3c22.JPG)
+
 
 # Second Milestone
 
