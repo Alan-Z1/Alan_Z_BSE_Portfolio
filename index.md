@@ -1,4 +1,3 @@
-![IMG_3902](https://user-images.githubusercontent.com/86977893/126823598-58aed7cc-712d-4961-b447-cb98a479bf6b.JPG)
 ﻿# Object Avoiding Robot
 A robot that can avoid obstacles in its way when moving by sensing them with an ultrasonic distance sensor.
 
