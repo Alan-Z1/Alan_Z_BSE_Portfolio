@@ -1,5 +1,5 @@
 ﻿# Object Avoiding Robot
-A robot that can avoid obstacles in its way when moving by sensing them with n ultrasonic distance sensor.
+A robot that can avoid obstacles in its way when moving by sensing them with an ultrasonic distance sensor.
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
