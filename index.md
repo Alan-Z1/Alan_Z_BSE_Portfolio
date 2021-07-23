@@ -5,7 +5,7 @@ A robot that can avoid obstacles in its way when moving by sensing them with an 
 |:--:|:--:|:--:|:--:|
 | Alan Z | Leigh | Engineering | Incoming Junior
 
-![Headstone Image](
+![Headstone Image](https://user-images.githubusercontent.com/86977893/126823679-69c6ac49-c720-4e57-b706-696d05eb3c22.JPG)
   
 # Demo Night Video
 
@@ -16,8 +16,7 @@ A robot that can avoid obstacles in its way when moving by sensing them with an 
 
 My final milestone was basically finishing up the robot. I uploaded the complete code to the Arduino and tested the robot in its ability to actually avoid obstacles. I also plan to make some modifications in the future, starting with some simpler ones, such as having a red LED light up whenever an obstacle is detected by the robot.
 
-[![Final Milestone](https://user-images.githubusercontent.com/86977893/126823679-69c6ac49-c720-4e57-b706-696d05eb3c22.JPG)
-
+[![Final Milestone](image url
 
 # Second Milestone
 
