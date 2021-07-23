@@ -14,7 +14,91 @@ A robot that can avoid obstacles in its way when moving by sensing them with an 
 
 # Final Milestone
 
-My final milestone was basically finishing up the robot. I uploaded the complete code to the Arduino and tested the robot in its ability to actually avoid obstacles. I also plan to make some modifications in the future, starting with some simpler ones, such as having a red LED light up whenever an obstacle is detected by the robot.
+My final milestone was basically finishing up the robot. I made and uploaded the completed code (shown below) to the Arduino and tested the robot in its ability to actually avoid obstacles. I also plan to make some modifications in the future, starting with some simpler ones, such as having a red LED light up whenever an obstacle is detected by the robot.
+
+```
+#include <AFMotor.h> //import your motor shield library
+#define trigPin 12 // define the pins of your sensor
+#define echoPin 13 
+AF_DCMotor motor1(1,MOTOR12_64KHZ); // set up motors.
+AF_DCMotor motor2(2, MOTOR12_8KHZ);
+ 
+// Motor A connections
+int enA = 9;
+int in1 = 8;
+int in2 = 7;
+// Motor B connections
+int enB = 3;
+int in3 = 5;
+int in4 = 4;
+
+ 
+void setup() {
+  Serial.begin(9600); // begin serial communication  
+  Serial.println("Motor test!");
+   pinMode(trigPin, OUTPUT);// set the trig pin to output (Send sound waves)
+  pinMode(echoPin, INPUT);// set the echo pin to input (recieve sound waves)
+  motor1.setSpeed(105); //set the speed of the motors, between 0-255
+motor2.setSpeed(105);  
+
+// Set all the motor control pins to outputs
+	pinMode(enA, OUTPUT);
+	pinMode(enB, OUTPUT);
+	pinMode(in1, OUTPUT);
+	pinMode(in2, OUTPUT);
+	pinMode(in3, OUTPUT);
+	pinMode(in4, OUTPUT);
+	
+	// Turn off motors - Initial state
+	digitalWrite(in1, LOW);
+	digitalWrite(in2, LOW);
+	digitalWrite(in3, LOW);
+	digitalWrite(in4, LOW);
+}
+ 
+void loop() {
+
+   long duration, distance; // start the scan
+  digitalWrite(trigPin, LOW);  
+  delayMicroseconds(2); // delays are required for a succesful sensor operation.
+  digitalWrite(trigPin, HIGH);
+
+  delayMicroseconds(10); //this delay is required as well!
+  digitalWrite(trigPin, LOW);
+  duration = pulseIn(echoPin, HIGH);
+  distance = (duration/2) / 29.1;// convert the distance to centimeters.
+  if (distance < 25)/*if there's an obstacle 25 centimers, ahead, do the following: */ {   
+   Serial.println ("Close Obstacle detected!" );
+Serial.println ("Obstacle Details:");
+Serial.print ("Distance From Robot is " );
+Serial.print ( distance);
+Serial.print ( " CM!");// print out the distance in centimeters.
+
+Serial.println (" The obstacle is declared a threat due to close distance. ");
+Serial.println (" Turning !");
+    motor1.run(FORWARD);  // Turn as long as there's an obstacle ahead.
+    motor2.run (BACKWARD);
+    analogWrite(enA, 200);
+    analogWrite(enB, 200);
+    digitalWrite(in1, HIGH);
+    digitalWrite(in2, LOW);
+    digitalWrite(in3, HIGH);
+    digitalWrite(in4, LOW);
+}
+  else {
+   Serial.println ("No obstacle detected. going forward");
+   delay (15);
+   motor1.run(FORWARD); //if there's no obstacle ahead, Go Forward! 
+    motor2.run(FORWARD);  
+    analogWrite(enA, 100);
+    analogWrite(enB, 0);
+    digitalWrite(in1, LOW);
+    digitalWrite(in2, HIGH);
+    digitalWrite(in3, HIGH);
+    digitalWrite(in4, LOW);
+  } 
+}
+```
 
 [![Final Milestone](https://res.cloudinary.com/marcomontalbano/image/upload/v1627064554/video_to_markdown/images/youtube--BkDAiuZEfdk-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/BkDAiuZEfdk "Alan Z Final Milestone")
 
