@@ -9,7 +9,7 @@ A robot that can avoid obstacles in its way when moving
   
 # Final Milestone
 
-My final milestone was basically finishing up the robot. I uploaded code to the Arduino and tested the robot in its ability to actually avoid obstacles. I also plan to make some modifications in the future, starting with some simpler ones, such as having a red LED light up whenever an obstacle is detected by the robot.
+My final milestone was basically finishing up the robot. I uploaded the complete code to the Arduino and tested the robot in its ability to actually avoid obstacles. I also plan to make some modifications in the future, starting with some simpler ones, such as having a red LED light up whenever an obstacle is detected by the robot.
 
 [![Final Milestone](
 
